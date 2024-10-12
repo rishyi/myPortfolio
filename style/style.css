@@ -1,0 +1,150 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: b;
+}
+
+body{
+    color: #ffffff;
+    overflow-x: hidden;
+    background: black;
+}
+
+.container-main {
+    position: relative;
+    background-color: rgba(82,82,82, 0.14);
+    max-height: 500px;
+  }
+
+.container-main .row-main { 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    max-height: 500px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px; /* 12px gap between columns */
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.social{
+    display: flex;
+    gap: 20px;
+}
+
+.social:hover{
+    
+}
+
+  .row-main .col-5{
+    width: 100%;
+    position: relative;
+    top:-330px;
+    height: fit-content;
+    max-height: 500px;
+  }
+
+  .row-main .col-7{
+    width: 100%;
+    height: fit-content;
+  }
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 2%;
+    padding-right: 7%;
+}
+ .hero-123{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 7px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #41FC00;
+    transition: .4s;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+}
+
+.Home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: black;
+    
+}
+
+.container {
+    padding: 0 15px;
+    background: black;
+    padding: 48px;
+    position: relative;
+  }
+  
+  .row { 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px; /* 12px gap between columns */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .col-7 {
+    grid-column: span 7;
+  }
+  
+  .col-5 {
+    grid-column: span 5;
+    margin: auto;
+    
+  }
+  
+  .col {
+    box-sizing: border-box;
+  }
+
+  .about-title{
+    position: absolute;
+    top: 48px;
+    left:0;
+    padding: 12px;
+    padding-right: 24px;
+    border: 5px solid #41FC00;
+    border-left: 0px;
+    border-top-right-radius: 100%;
+    height: fit-content;
+    border-bottom-right-radius: 100%;
+    background-color: #406F30;
+  }
+
+  .about h3{
+    font-size: 36px !important;
+  }
+

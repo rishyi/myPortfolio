@@ -2,33 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ravishka</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AnimateStyle.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="path-to-your-folder/animate.css" />
+
 </head>
 <body>
 
     
 <!--hero section part-->
-<div class="hero">
+<section class="hero">
     <nav>
-
         <h2 class="Logo">PortFolio</h2>
-
-        <ul>
+        <ul class="hero-123">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">project</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-
     </nav>
-    <div class="content">
-
-        <img src="assets/Snapchat-1250582369.jpg" alt="jpg">
-        <h2>Hi There!</h2>
-        <h2>I am a Developer</h2>
-        <h2>I make the complex simple</h2>
+    <!-- <div class="content">
+        
+        <h1>Hi There!</h1>
+        <h2>I am a <span>Developer</span></h2>
+        <h3>I make the complex simple</h3>
 
         <div class="social">
             <a href="#"><i class='bx bxl-facebook-circle'></i></a>
@@ -36,13 +39,31 @@
             <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
             <a href="#"><i class='bx bxl-github' ></i></a>
         </div>
+    </div> -->
 
-    </div>
+    <div class="container-main">
+        <div class="row-main">
+            <div class="col col-5">
+                <div style="width: 100%; height: fit-content"></div>
+                <img src="/assets/Snapchat-1250582369-removebg-preview.png" width="100%"/> </div>
+             <div class="col col-7">
+                <div style="width: fit-content; margin: auto; line-height: 36px;">
+                    <h3>Hi There! <br />
+                    I am <span style="color: #41FC00;">DEVELOPER</span><br />
+                    I make the Complex Simple</h3>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                </div> 
+            </div>  
+            </div>
+</section>
 
-</div>
-
+ 
 <!-- Hoem Section -->
-<div class="Home">
+<!-- <div class="Home" data-aos="zoom-out-up">
 
     <h3>About</h3>
     <div>
@@ -54,11 +75,33 @@
             My enthusiasm for learning and staying current with industry trends ensures that I bring innovative and effective solutions to every project I undertake.
         </p>    
     </div>
-    <img src="assets/PXL_20221230_161003184.NIGHT~2.jpg" alt="jpg">
-</div>
+    <img src="assets/PXL_20221230_161003184.NIGHT~2.jpg" alt="jpg" width="300px">
+</div> -->
+
+<div class="container">
+    <h3 class="about-title">About </h3>
+    <div class="row">
+      <div class="col col-7">
+        <!-- Content for the first column -->
+        <div class="about">
+        <h3 style="margin-bottom: 20px; color: #41FC00;">Who i am?</h3>
+        <h4 style="margin-bottom: 20px;">I am Ravishka Santhush, a Visual 
+            UI/UX Designer and Web  Developer
+        </h4>
+        <p>Passionate frontend developer dedicated to creating visually appealing and highly functional web experiences. With a strong background in HTML, CSS, and JavaScript, along with proficiency in frameworks like React and Vue.js, I focus on delivering user-friendly and responsive designs. 
+            My enthusiasm for learning and staying current with industry trends ensures that I bring innovative and effective solutions to every project I undertake.
+        </p> 
+    </div>
+      </div>
+      <div class="col col-5">
+        <!-- Content for the second column -->
+        <img src="assets/PXL_20221230_161003184.NIGHT~2.jpg" alt="jpg" width="300px">
+      </div>
+    </div>
+  </div>
 
 <!-- Service Section -->
-<div class="Service">
+<div class="Service" data-aos="zoom-out-up"> 
 
     <!-- service 1 -->
     <div class="webDevelopment">
@@ -187,6 +230,13 @@
         copy right 2023.designed by rishiyy
     </h4>
 </div>
+
+<!-- AOS animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
