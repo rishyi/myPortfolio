@@ -6,3 +6,50 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
+
+<div class="Service" data-aos="zoom-out-up"> 
+
+    <!-- service 1 -->
+    <div class="webDevelopment">
+        <img src="assets/coding (1).png" alt="png">
+        <div>
+            <h3>Web Development</h3>
+            <p>Custom Website Design and Development.
+                Crafting unique and tailored websites to reflect your brand identity
+            </p>
+        </div>
+    </div>
+
+    <!-- service 2 -->
+    <div class="java">
+        <img src="assets/coffee.png" alt="png">
+        <div>
+            <h3>Java project</h3>
+            <p>Project Planning and Requirements Gathering.
+                Define the project scope requirements.
+            </p>
+        </div>
+    </div>
+
+    <!-- service 3 -->
+    <div class="React">
+        <img src="assets/atomic.png" alt="png">
+        <div>
+            <h3>React Project</h3>
+            <p>Project Planning and Requirements Gathering.
+                Define the project scope requirements.
+            </p>
+        </div>
+    </div>
+
+    <!-- service 4 -->
+    <div class="UIUX">
+        <img src="assets/ux.png" alt="png">
+        <div>
+            <h3>React Project</h3>
+            <p> Analyze market trends, competitor products, 
+                and industry standards.
+            </p>
+        </div>
+    </div>
+</div>
