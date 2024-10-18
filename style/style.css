@@ -15,6 +15,10 @@ body{
     font-family:'proxima-nova', sans-serif; ;
 }
 
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
 .container-main {
     position: relative;
     background-color: rgba(82,82,82, 0.14);
@@ -50,7 +54,7 @@ body{
   transition: color 0.3s;
 }
 
-.social a:hover{    
+.social a:hover,.footer-social a:hover{    
   color: #ffffff;
   background-color: #41fc00;
   border-radius: 50%; 
@@ -166,8 +170,8 @@ nav ul li a:hover{
   .col-6 {
     grid-column: span 6;
     margin: auto;
-    
   }
+
   .col-7 {
     grid-column: span 7;
   }
@@ -175,7 +179,6 @@ nav ul li a:hover{
   .col-8 {
     grid-column: span 8;
     margin: auto;
-    
   }
 
   .col-9 {
@@ -185,8 +188,8 @@ nav ul li a:hover{
   .col-10 {
     grid-column: span 10;
     margin: auto;
-    
   }
+
   .col-11 {
     grid-column: span 11;
   }
@@ -194,7 +197,6 @@ nav ul li a:hover{
   .col-12 {
     grid-column: span 12;
     margin: auto;
-    
   }
 
   .col {
@@ -218,6 +220,7 @@ nav ul li a:hover{
   .about h3{
     font-size: 36px !important;
   }
+  
   .Service-title{
     position: absolute;
     top: 48px;
@@ -361,6 +364,7 @@ overflow: hidden;
 
 .project-card:hover{
   .project-card-details{
+    font-weight: 500;
     animation: FadeIn 2s ease-in-out;
     animation-duration: 800ms;
     position: absolute;
@@ -470,6 +474,7 @@ input[type="text"]:focus {
 }
 
 .submit-button:hover{
+  font-weight: bold;
   box-shadow: 0 0 10px rgba(63, 252, 0, 0.87), 0 0 45px rgba(65, 252, 0, 0.3);
   transform: translateY(5px) scale(1.05) ; 
   transition: all 0.3s ease-in-out; 
@@ -518,6 +523,11 @@ input[type="text"]:focus {
   display: inline-block;
 }
 
+.footer-links a{
+  margin-right: 5px;
+  padding-right: 10px;
+}
+
 .footer-links a,.footer-contact a {
   color: #41fc00;
   text-decoration: none;
@@ -525,7 +535,8 @@ input[type="text"]:focus {
 }
 
 .footer-links a:hover,.footer-contact a:hover {
-  color: #ffffff;
+  color: #ffda08;
+  text-shadow: 0 0 30px #41FC00;
 }
 
 .footer-social {
@@ -539,9 +550,6 @@ input[type="text"]:focus {
   transition: color 0.3s;
 }
 
-.footer-social a:hover {
-  color: #ffffff;
-}
 
 hr {
   border: none;
@@ -557,18 +565,18 @@ hr {
 }
 
 
+
 @media (max-width: 768px) {
-  .col-footer {
+  /* .col-footer {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 20px;
-  }
+  } */
 
   .footer-social {
     justify-content: center;
   }
 }
-
 
 @media (max-width: 768px) {
   .col-6 {
