@@ -433,13 +433,6 @@ input[type="text"]:focus {
   .col-6 {
     flex: 0 0 100%; /* Full width on smaller screens */
   }
-  .col-5{
-    flex: 0 0 100%;
-  }
-  .col-7{
-    flex: 0 0 100%;
-  }
-}
 
 
 @keyframes moveY {
