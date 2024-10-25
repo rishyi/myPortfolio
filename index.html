@@ -8,6 +8,9 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link href="https://fonts.cdnfonts.com/css/faktum-test" rel="stylesheet">
+                
     <link rel="stylesheet" href="style/style.css" />
     <!-- AOS animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -85,13 +88,7 @@
 
       <div class="container-main">
         <div class="row-main">
-          <div class="col col-5 image-card">
-            <div style="width: 100%; height: fit-content"></div>
-            <img
-              src="/assets/Snapchat-1250582369-removebg-preview.png"
-              width="100%"
-            />
-          </div>
+          
           <div class="col col-7 details-card">
             <div style="width: fit-content; margin: auto; line-height: 36px">
               <h3>
@@ -107,6 +104,13 @@
               </div>
             </div>
           </div>
+          <div class="col col-5 image-card flex center mt-[20px] mb-[20px]">
+            <img
+            src="assets/PXL_20221230_161003184.NIGHT~2.jpg"
+            alt="jpg"
+            style="border: 2px solid #41fc00; width:60%; border-radius: 100%; aspect-ratio: 1; object-fit: cover;"
+          />
+          </div>
         </div>
       </div>
     </section>
@@ -115,10 +119,10 @@
     <div class="container" id="about">
       <h3 class="about-title section-title ">About</h3>
       <div class="row mt-[20px]">
-        <div class="col col-7 about-text-section">
+        <div class="col col-12 about-text-section">
           <!-- Content for the first column -->
           <div class="about">
-            <h3 style="margin-bottom: 20px; color: #41fc00">Who i am?</h3>
+            <h3 style="margin-bottom: 20px; color: #2dd897">Who i am?</h3>
             <h4 style="margin-bottom: 20px">
               I am Ravishka Santhush, a Visual UI/UX Designer and Web Developer
             </h4>
@@ -133,15 +137,16 @@
             </p>
           </div>
         </div>
-        <div class="col col-5 about-image-section">
+       
           <!-- Content for the second column -->
+          <!-- <div class="col col-5 about-image-section">
           <img
             src="assets/PXL_20221230_161003184.NIGHT~2.jpg"
             alt="jpg"
             width="300px"
             style="border: 2px solid #41fc00;"
           />
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -439,6 +444,9 @@
     <script>
       function applyDynamicMargin() {
         const elements = document.querySelectorAll('[class*="mt-["]');
+        const elementsBottom = document.querySelectorAll('[class*="mb-["]');
+        const elementsLeft = document.querySelectorAll('[class*="ml-["]');
+        const elementsRight = document.querySelectorAll('[class*="mr-["]');
 
         elements.forEach((element) => {
           const match = element.className.match(/mt-\[(\d+px)\]/);
@@ -447,6 +455,33 @@
             element.style.marginTop = marginTopValue;
           }
         });
+
+
+        elementsBottom.forEach((element) => {
+          const matchB = element.className.match(/mb-\[(\d+px)\]/);
+          if (matchB) {
+            const marginBValue = matchB[1];
+            element.style.marginBottom = marginBValue;
+          }
+        });
+
+        elementsLeft.forEach((element) => {
+          const matchL = element.className.match(/ml-\[(\d+px)\]/);
+          if (matchL) {
+            const marginValue = matchL[1];
+            element.style.marginLeft = marginValue;
+          }
+        });
+
+        elementsRight.forEach((element) => {
+          const matchR = element.className.match(/mr-\[(\d+px)\]/);
+          if (matchR) {
+            const marginValue = matchR[1];
+            element.style.marginRight = marginValue;
+          }
+        });
+
+       
       }
 
       document.addEventListener("DOMContentLoaded", applyDynamicMargin);
