@@ -18,6 +18,7 @@ body{
     max-width: 100vw;
 }
 
+
 html {
   scroll-behavior: smooth; /* Enable smooth scrolling */
 }
@@ -420,6 +421,90 @@ overflow: hidden;
     justify-content: center;
     padding: 40px;
   }
+}
+
+/* Ensure the body and html are full height to center the content */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure content is centered vertically */
+  padding-top: 50px; /* Optional padding at the top */
+}
+
+.Assigment-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Style for the assignment card */
+.assignment-card {
+  background-color: #121212; /* Apply the #0af172 color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.assignment-card h5 {
+  color: #0af172;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.assignment-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.assignment-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 255, 128, 0.25);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-github {
+  background-color: #24292f; /* GitHub's dark color */
+}
+
+.btn-run {
+  background-color: #0af172; /* Blue color for "View Run" */
+}
+
+.btn:hover {
+  opacity: 0.9;
+
+}
+
+.btn-github:hover {
+  background-color: #0af172; /* Slightly darker GitHub color on hover */
+}
+
+.btn-run:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 
